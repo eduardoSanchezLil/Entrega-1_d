@@ -18,3 +18,17 @@ zonas.append(zona1)
 zonas.append(zona2)  
 zonas.append(zona3)  
 zonas.append(zona4)
+
+#----------------------------------------------  
+# FUNCIONES  
+#----------------------------------------------  
+  
+def calculoDeLaSuperficieALimpiar(listaDeZonas):  
+   superficieALimpiar = 0  
+   para zona en listaDeZonas:  
+       largo = zona.get("largo")/100  
+       ancho = zona.get("ancho")/100  
+       calculo = largo*ancho  
+       print (str(largo)+" x "+str(ancho)+"= "+str(calculo))  
+       superficieALimpiar = superficieALimpiar +calculo  
+   return (superficieALimpiar)
