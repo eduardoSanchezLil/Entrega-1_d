@@ -25,10 +25,10 @@ zonas.append(zona4)
   
 def calculoDeLaSuperficieALimpiar(listaDeZonas):  
    superficieALimpiar = 0  
-   para zona1 en listaDeZonas:   # type: ignore
-       largo = zona1.get("largo")/100  
-       ancho = zona1.get("ancho")/100  
-       calculo = largo*ancho  
-       print (str(largo)+" x "+str(ancho)+"= "+str(calculo))  
-       superficieALimpiar = superficieALimpiar +calculo  
+   for zona1 in listaDeZonas:   # type: ignore
+        largo = zona1.get("largo")/100  
+        ancho = zona1.get("ancho")/100  
+        calculo = largo*ancho  
+        print (str(largo)+" x "+str(ancho)+"= "+str(calculo))  
+        superficieALimpiar = superficieALimpiar +calculo  
    return (superficieALimpiar)
